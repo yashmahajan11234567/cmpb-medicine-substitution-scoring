@@ -1,0 +1,3 @@
+# CMPB Medicine Substitution-Scoring Algorithm
+# No external dependencies required — stdlib only (Python ≥ 3.10)
+# Tested on Python 3.14

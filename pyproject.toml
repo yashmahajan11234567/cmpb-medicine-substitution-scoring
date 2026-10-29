@@ -1,0 +1,54 @@
+[project]
+name = "cmpb-medsub"
+version = "1.0.0"
+description = "Transparent Implementation and Verification of a Medicine Substitution-Scoring Algorithm"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Ajinkya Jiman", email = "ajinkya.jiman@example.com"},
+    {name = "K. Rajeswari", email = "k.rajeswari@example.com"},
+    {name = "Ruturaj Warkad", email = "ruturaj.warkad@example.com"},
+    {name = "Vivek Painjane", email = "vivek.painjane@example.com"},
+    {name = "Yash Mahajan", email = "yash.mahajan23@pccoepune.org"},
+    {name = "Aryan Wankhade", email = "aryan.wankhade@example.com"},
+]
+keywords = [
+    "medicine substitution",
+    "drug shortage",
+    "substitutability score",
+    "deterministic algorithm",
+    "EDQM Standard Terms",
+    "fixed-dose combination",
+    "reproducibility",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.3"]
+
+[project.urls]
+Homepage = "https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring"
+Repository = "https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring"
+Issues = "https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["code"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

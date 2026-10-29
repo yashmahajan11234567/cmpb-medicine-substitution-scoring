@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Jiman
+    given-names: Ajinkya
+    orcid: "https://orcid.org/0000-0002-9239-5542"
+  - family-names: Rajeswari
+    given-names: K.
+    orcid: "https://orcid.org/0000-0002-5392-3920"
+  - family-names: Warkad
+    given-names: Ruturaj
+    orcid: "https://orcid.org/0009-0002-5318-9268"
+  - family-names: Painjane
+    given-names: Vivek
+    orcid: "https://orcid.org/0009-0008-4288-1885"
+  - family-names: Mahajan
+    given-names: Yash
+    orcid: "https://orcid.org/0009-0004-3789-1641"
+  - family-names: Wankhade
+    given-names: Aryan
+    orcid: "https://orcid.org/0009-0006-3026-8261"
+title: "Transparent Implementation and Verification of a Medicine Substitution-Scoring Algorithm: Deterministic Scoring and Unit-Consistent Dose Handling"
+version: 1.0.0
+date-released: 2026-10-29
+doi: "10.5281/zenodo.XXXXXXX"  # To be updated after Zenodo release
+url: "https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring"
+repository-code: "https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring"
+license: MIT
+keywords:
+  - medicine substitution
+  - drug shortage
+  - substitutability score
+  - deterministic algorithm
+  - EDQM Standard Terms
+  - fixed-dose combination
+  - reproducibility
+  - computational verification
+references:
+  - type: article
+    authors:
+      - family-names: Caviglioli
+        given-names: Alessandro
+      - family-names: et al.
+    title: "Medicine substitution scoring algorithm"
+    journal: "Computer Methods and Programs in Biomedicine"
+    year: 2025
+    note: "Reference to the original specification being implemented and verified"
