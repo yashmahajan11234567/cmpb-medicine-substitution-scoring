@@ -1,0 +1,5 @@
+- Independent Python implementation of Caviglioli et al.'s medicine substitution DS algorithm
+- 196-assertion test suite verifying every labelled result in the published specification
+- Table 8 DS scores: 26/32 match under strict reading; 32/32 under inferred TRN reconciliation
+- Table 7 NDXUP sums: no single unit convention reproduces all 5 rows (3/5 unit-aware, 4/5 literal)
+- Fixed-dose-combination extension (V3) explicitly labelled as unvalidated adaptation
