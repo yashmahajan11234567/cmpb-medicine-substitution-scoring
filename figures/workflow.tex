@@ -1,0 +1,31 @@
+% Figure 2: Scoring workflow of the implemented method
+% Clean, minimal TikZ diagram: query + catalogue -> ATC filter -> DS computation -> ranking -> output
+
+\begin{tikzpicture}[
+    node distance = 2.6cm and 3.6cm,
+    io/.style = {draw, rounded corners, align=center, text width=3.8cm, minimum height=1.8cm, font=\footnotesize, fill=yellow!15},
+    stepbox/.style = {draw, rounded corners, align=center, text width=3.6cm, minimum height=2.0cm, font=\footnotesize, fill=blue!8},
+    arrow/.style = {-Stealth, thick},
+]
+
+% Left: inputs
+\node[io] (input) {Query product\\ ATC + ST codes + NDXUP\\ Catalogue of candidates};
+
+\node[stepbox, right=of input] (s1) {1. ATC filter\\ keep candidates sharing query ATC};
+
+\node[stepbox, right=of s1] (s2) {2. DS computation\\ per candidate\\ Eqs.~(1)--(4)};
+
+\node[stepbox, right=of s2] (s3) {3. Ranking\\ equivalents first\\ then descending DS};
+
+\node[io, right=of s3] (output) {Ranked substitute list\\ with DS scores\\ and penalty breakdown};
+
+% Forward arrows
+\draw[arrow] (input) -- (s1) node[midway, above, font=\scriptsize] {input attributes};
+\draw[arrow] (s1) -- (s2) node[midway, above, font=\scriptsize] {filtered candidates};
+\draw[arrow] (s2) -- (s3) node[midway, above, font=\scriptsize] {DS per candidate};
+\draw[arrow] (s3) -- (output) node[midway, above, font=\scriptsize] {ranked output};
+
+% Add extra space at top for LaTeX caption clearance
+\path (current bounding box.north) -- ++(0,0.8cm);
+
+\end{tikzpicture}

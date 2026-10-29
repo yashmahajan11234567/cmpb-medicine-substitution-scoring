@@ -1,0 +1,46 @@
+# macOS FAT32 sidecar files
+._*
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+# PDF outputs (keep only final release PDFs)
+*.pdf
+!main_cmpb_v13_final.pdf
+!main_cmpb_v12.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+.pyo
+.pytest_cache/
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*_backup*/
+audit_backup*/
+
+# Temporary PNG renders
+page*.png
+v*p-*.png
+v*page-*.png
+v*audit-*.png

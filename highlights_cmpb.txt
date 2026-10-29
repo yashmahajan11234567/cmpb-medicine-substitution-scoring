@@ -1,0 +1,5 @@
+Deterministic Python implementation of the published medicine substitution score.
+Unit-aware and literal dose conventions give different Table 7 numerical matches.
+Proposed TRN table reconciliation inferred from published scores, not confirmed.
+Fixed-dose-combination extension is preliminary and unvalidated against ground truth.
+No claim of clinical interchangeability or therapeutic equivalence is made.

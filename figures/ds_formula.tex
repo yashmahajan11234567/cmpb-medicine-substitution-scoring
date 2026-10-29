@@ -1,0 +1,47 @@
+% Figure 1: DS score decomposition
+% Clean, minimal TikZ diagram showing DS = 100 - (penalty_NDXUP + penalty_STs)
+% with the five EDQM Standard Terms branching from penalty_STs
+
+\begin{tikzpicture}[
+    node distance = 1.5cm and 2.2cm,
+    root/.style = {draw, rounded corners, align=center, minimum width=4.4cm, minimum height=1.4cm, font=\footnotesize\itshape, fill=yellow!15},
+    comp/.style = {draw, rounded corners, align=center, minimum width=3.0cm, minimum height=1.2cm, font=\footnotesize, fill=blue!10},
+    leaf/.style = {draw, rounded corners, align=center, minimum width=2.4cm, minimum height=1.0cm, font=\scriptsize, fill=green!8},
+    arrow/.style = {-Stealth, thick},
+    edge/.style = {font=\scriptsize, align=center, text width=1.6cm},
+]
+
+% Root: DS formula
+\node[root] (ds) {DS $= 100 - (\text{penalty}_{\text{NDXUP}} + \text{penalty}_{\text{STs}})$\\ Equation (1)};
+
+% Left branch: penalty_NDXUP
+\node[comp, fill=orange!15, below left=of ds] (p1) {penalty$_{\text{NDXUP}}$\\ Table 4\\ $0,\ 2,\ 4,\ 6,\ 8,\ 10$};
+
+% Right branch: penalty_STs
+\node[comp, fill=green!10, below right=of ds] (p2) {penalty$_{\text{STs}}$\\ $\sum\, \text{NRD}_n \times w_n \times 80/100$\\ maximum 80 points};
+
+% Sum over node
+\node[comp, fill=green!5, below=1.6cm of p2] (psum) {sum over\\ five STs};
+
+% Individual NRD boxes - arranged in an arc below psum
+\node[leaf, below left=1.4cm and 0.6cm of psum] (nrd1) {NRD$_{\text{BDF}}$\\ weight 0.46};
+\node[leaf, below left=0.9cm and 0.2cm of nrd1] (nrd2) {NRD$_{\text{AME}}$\\ weight 0.18};
+\node[leaf, below right=0.9cm and 0.2cm of nrd1] (nrd3) {NRD$_{\text{ISI}}$\\ weight 0.20};
+\node[leaf, below right=0.9cm and 0.2cm of nrd3] (nrd4) {NRD$_{\text{RCA}}$\\ weight 0.09};
+\node[leaf, below right=0.9cm and 0.2cm of nrd4] (nrd5) {NRD$_{\text{TRN}}$\\ weight 0.07};
+
+% Arrows from root
+\draw[arrow] (ds) -- (p1) node[midway, left, font=\tiny] {component};
+\draw[arrow] (ds) -- (p2) node[midway, right, font=\tiny] {component};
+
+% Arrow from p2 to psum
+\draw[arrow] (p2) -- (psum) node[midway, left, font=\tiny] {sum over};
+
+% Arrows from psum to individual NRDs
+\draw[arrow] (psum) -- (nrd1) node[midway, left, font=\tiny] {};
+\draw[arrow] (nrd1) -- (nrd2) node[midway, left, font=\tiny] {};
+\draw[arrow] (nrd1) -- (nrd3) node[midway, right, font=\tiny] {};
+\draw[arrow] (nrd3) -- (nrd4) node[midway, left, font=\tiny] {};
+\draw[arrow] (nrd3) -- (nrd5) node[midway, right, font=\tiny] {};
+
+\end{tikzpicture}
