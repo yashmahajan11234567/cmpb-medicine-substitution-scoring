@@ -143,11 +143,11 @@ Email: yash.mahajan23@pccoepune.org
 |---|---|---|
 | Corresponding author full postal address | Yash Mahajan | PROVIDED |
 | Corresponding author telephone number | Yash Mahajan | **MISSING — REQUIRED** |
-| CRediT author contributions confirmation | All 6 authors | **PENDING** |
-| Exclusive submission confirmation | All 6 authors | **PENDING** |
+| CRediT author contributions confirmation | All 6 authors | **APPROVED** |
+| Exclusive submission confirmation | All 6 authors | **APPROVED** |
 | Zenodo DOI (real, verified) | Repository owner | **RESOLVED — 10.5281/zenodo.23774017 (v1.0.1)** |
-| Cover letter approval | All 6 authors | **PENDING** |
-| Competing interests final check | All 6 authors | **PENDING** |
+| Cover letter approval | All 6 authors | **APPROVED** |
+| Competing interests final check | All 6 authors | **APPROVED** |
 
 ---
 
