@@ -108,12 +108,12 @@
 
 ---
 
-## Release-Readiness Audit (2026-10-29 — Final Build)
+## Release-Readiness Audit (2026-10-29 — Final Build with DOI Update)
 
-**Fresh Build Confirmed:**
+**Fresh Build Confirmed (Availability Statement Update):**
 - **Build command:** `DYLD_LIBRARY_PATH=/Users/yashsiphone/.hermes/cache/scratch/hvf_stub DYLD_FALLBACK_LIBRARY_PATH=/Users/yashsiphone/.hermes/cache/scratch/hvf_stub /opt/homebrew/bin/tectonic main_cmpb_v13.tex`
 - **Exit code:** 0 (success)
-- **Build timestamp:** 2026-10-29 22:50:06 IST
+- **Build timestamp:** 2026-10-29 23:06:54 IST
 - **Final PDF:** `main_cmpb_v13_final.pdf` copied from fresh build output (identical timestamps)
 
 **hvf_stub Dependency:**
@@ -131,6 +131,7 @@ The Tectonic/XeTeX build requires a Freetype harfbuzzer shim (`libhvf.dylib`) wh
 - ✅ `find_substitutes()` identifier kept visually intact on one line at all 3 occurrences (pages 4, 6, 7)
 - ✅ Equation (1) parentheses render correctly in PDF
 - ✅ Gentamycin paragraph transition grammatically correct; "while" clauses mid-sentence with non-breaking spaces
+- ✅ **Availability statement updated**: All 3 locations now reference verified GitHub URL and Zenodo DOI `10.5281/zenodo.23774017`
 
 **Version Preservation Confirmed:**
 - V2 through V12: all `.tex` and `.pdf` files exist with original timestamps (untouched)
@@ -148,7 +149,7 @@ These require author confirmation before journal submission; they do not affect 
 3. **CRediT author contributions** — draft text present; requires confirmation by all six authors
 4. **Exclusive submission statement** — not yet confirmed
 5. **Cover letter approval** — not yet drafted
-6. **Repository DOI** — placeholder states "public repository has not yet been released"
+6. **Repository DOI** — **RESOLVED**: `10.5281/zenodo.23774017` (v1.0.1, verified)
 7. **Publisher confirmations** (copyright, funding, COI, GenAI wording) — all author-pending
 
 ---
