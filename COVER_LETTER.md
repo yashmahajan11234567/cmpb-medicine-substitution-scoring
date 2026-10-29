@@ -20,7 +20,7 @@ Caviglioli et al. (2025) published a degree-of-substitutability (DS) score for r
 3. **Documented reconciliation** of a genuine internal inconsistency: a transposition of two adjacent Table 1 rows (TRA-0039/TRA-0040) inferred from published scores restores 32/32 match on Table 8. The reconciliation is explicitly labelled as inferred, not authoritatively confirmed.
 4. **Unit-convention transparency** for fixed-dose-combination NDXUP (Equation 4): no single convention reproduces all five Table 7 sums (unit-aware: 3/5; literal: 4/5). Both conventions are reported side by side.
 5. **Explicit extension (V3)** for fixed-dose-combination reconstruction, clearly labelled as our own unvalidated adaptation — no clinical interchangeability claimed.
-6. **Full computational artifact** (code, data, tests, figures) deposited in a public repository with a persistent identifier (Zenodo DOI, to be confirmed before publication).
+6. **Full computational artifact** (code, data, tests, figures) deposited in a public repository with a persistent identifier: Zenodo DOI `10.5281/zenodo.23774017` (v1.0.1).
 
 **Confirmation:**
 - This work has not been published previously and is not under consideration elsewhere.

@@ -92,7 +92,7 @@ Email: yash.mahajan23@pccoepune.org
 | Funding | None received |
 | Competing interests | None declared |
 | Generative AI use | ChatGPT used for research discovery and manuscript preparation; authors take full responsibility |
-| Data/code availability | Repository: https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring (Zenodo DOI pending) |
+| Data/code availability | Repository: https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring (Zenodo DOI: 10.5281/zenodo.23774017) |
 | CRediT contributions | Drafted — requires confirmation by all 6 authors |
 | Exclusive submission | Confirmed — not published or submitted elsewhere |
 
@@ -145,36 +145,26 @@ Email: yash.mahajan23@pccoepune.org
 | Corresponding author telephone number | Yash Mahajan | **MISSING — REQUIRED** |
 | CRediT author contributions confirmation | All 6 authors | **PENDING** |
 | Exclusive submission confirmation | All 6 authors | **PENDING** |
-| Zenodo DOI (real, verified) | Repository owner | **PENDING — see ZENODO_RELEASE_PROCEDURE.md** |
+| Zenodo DOI (real, verified) | Repository owner | **RESOLVED — 10.5281/zenodo.23774017 (v1.0.1)** |
 | Cover letter approval | All 6 authors | **PENDING** |
 | Competing interests final check | All 6 authors | **PENDING** |
 
 ---
 
-## 8. Repository & DOI (Update Before Submission)
+## 8. Repository & DOI (Verified — No Update Needed)
 
 **Repository:** https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring
 
-**Zenodo DOI:** `10.5281/zenodo.XXXXXXX` — **TO BE FILLED AFTER ZENODO ARCHIVAL**
+**Zenodo DOI:** `10.5281/zenodo.23774017` — **VERIFIED (v1.0.1, October 29, 2026)**
 
-**To obtain DOI:** Follow `ZENODO_RELEASE_PROCEDURE.md` in the repository.
-
-**Manuscript availability statement (line ~443 in `main_cmpb_v13.tex`) must be updated:**
-```
-Code, the seeded generators, assertion suites, the published product attributes,
-and all generated outputs are maintained by the authors in the project directory
-and will be deposited in a public repository before publication.
-The repository and persistent identifier are not yet available.
-```
-→ Update to:
-```
-Code, the seeded generators, assertion suites, the published product attributes,
-and all generated outputs are available at
-https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring
-(DOI: 10.5281/zenodo.XXXXXXX).
+**Manuscript availability statement (lines 53, 421, 443 in `main_cmpb_v13.tex`) — UPDATED:**
+```latex
+The implementation, test suite, and generated outputs are available at
+\url{https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring}
+(DOI: \href{https://doi.org/10.5281/zenodo.23774017}{10.5281/zenodo.23774017}).
 ```
 
-Then rebuild `main_cmpb_v13_final.pdf` and verify.
+The final PDF `main_cmpb_v13_final.pdf` has been rebuilt and verified.
 
 ---
 

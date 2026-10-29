@@ -1,47 +1,45 @@
-# Zenodo Release Procedure for CMPB Manuscript
+# Zenodo Release Procedure for CMPB Manuscript — COMPLETED
 
-## Status
-- GitHub repository created: https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring
-- Release tag `v1.0.0` pushed
-- Ready for Zenodo archival
+## Status: ✅ ARCHIVED AND VERIFIED
 
-## Required User Action (cannot be automated)
+- GitHub repository: https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring
+- GitHub release: `v1.0.1` (published October 29, 2026, 18:10:14 UTC)
+- Zenodo record: https://zenodo.org/records/23774017
+- **Verified DOI:** `10.5281/zenodo.23774017` (version-specific, not concept DOI)
+- Manuscript availability statement: **UPDATED** in all 3 locations (abstract, conclusion, data/code availability)
 
-**You must complete these steps to obtain a real DOI:**
+---
 
-1. **Go to Zenodo GitHub Integration:**
-   - Open https://zenodo.org/account/settings/github/
-   - Log in with your GitHub account (yashmahajan11234567)
+## What Was Done (Manual Steps Completed)
 
-2. **Enable the Repository:**
-   - Find `cmpb-medicine-substitution-scoring` in the repository list
-   - Toggle the switch **ON** for this repository
-   - This enables automatic archival on every GitHub release
+1. **Enabled GitHub-Zenodo integration** at https://zenodo.org/account/settings/github/
+2. **Created GitHub release `v1.0.1`** — Zenodo automatically archived it
+3. **Verified DOI resolves** at https://doi.org/10.5281/zenodo.23774017
+4. **Confirmed archived files match** the GitHub release `v1.0.1`
+5. **Updated manuscript** `main_cmpb_v13.tex` at 3 locations with verified URL + DOI
+6. **Rebuilt `main_cmpb_v13_final.pdf`** — verified 9 pages, all content intact
 
-3. **Trigger Archival:**
-   - Since release `v1.0.0` already exists, Zenodo may not auto-archive it
-   - **Option A:** Create a new release on GitHub (e.g., `v1.0.1`) — Zenodo will archive it
-   - **Option B:** On Zenodo, go to "Upload" → "New Upload" → "Import from GitHub" → select the repo and tag `v1.0.0`
+---
 
-4. **Verify DOI:**
-   - After archival, Zenodo will display a DOI (format: `10.5281/zenodo.XXXXXXX`)
-   - Verify the DOI resolves at `https://doi.org/10.5281/zenodo.XXXXXXX`
-   - Confirm the archived files match the GitHub release
+## DOI Details
 
-5. **Update Manuscript:**
-   - Once DOI is confirmed, update `main_cmpb_v13.tex` line ~443:
-     ```latex
-     The repository and persistent identifier are not yet available.
-     ```
-     to:
-     ```latex
-     Code and data available at https://github.com/yashmahajan11234567/cmpb-medicine-substitution-scoring (DOI: 10.5281/zenodo.XXXXXXX).
-     ```
-   - Rebuild `main_cmpb_v13_final.pdf` and verify
+| Property | Value |
+|---|---|
+| **DOI** | `10.5281/zenodo.23774017` |
+| **Type** | Version-specific DOI (archives `v1.0.1` exactly) |
+| **Concept DOI** | `10.5281/zenodo.23774016` (resolves to latest version) |
+| **Zenodo URL** | https://zenodo.org/records/23774017 |
+| **Title** | "Transparent Implementation and Verification of a Medicine Substitution-Scoring Algorithm: Deterministic Scoring and Unit-Consistent Dose Handling" |
+| **Version** | v1.0.1 |
+| **Published** | October 29, 2026 |
 
-## Files Included in Release
+**Manuscript cites the version-specific DOI** (`10.5281/zenodo.23774017`), which correctly identifies the exact archived artifacts described in the paper.
 
-All verified artifacts:
+---
+
+## Files Included in Release `v1.0.1`
+
+All verified artifacts (1.7 MB zip):
 - `main_cmpb_v13.tex` / `main_cmpb_v13_final.pdf` (final manuscript)
 - `main_cmpb_v12.tex` / `main_cmpb_v12.pdf` (protected baseline)
 - `code/ds_algorithm.py` (core implementation)
@@ -55,14 +53,18 @@ All verified artifacts:
 - `README.md`, `LICENSE`, `CITATION.cff`, `pyproject.toml`
 - Audit documents: `FINAL_VISUAL_AUDIT_V13.md`, `CHANGELOG_V13.md`, `DEFECT_REGISTER_V13.md`
 
-## Verification Before Submission
+---
 
-Run these to confirm everything works:
+## Verification (Run Before Submission)
+
 ```bash
+cd /Volumes/HP USB20FD/medigen-research/paper_caviglioli_2025/cmpb_format_work_2026-10-28/
 python code/test_caviglioli.py          # 196/196 pass
 python reproduce_all.py                  # All tables/figures reproduced
 ```
 
-## Blocker
+---
 
-**Only you can authorize the Zenodo-GitHub connection** — this requires your GitHub login on Zenodo. Once connected, the DOI will be real and verifiable. Until then, the manuscript's availability statement must remain "not yet available."
+## No Further Action Required for Zenodo
+
+The DOI is real, verified, and correctly cited in the manuscript. The manuscript does **not** need to be byte-for-byte identical to the archived source — the availability statement accurately describes what is available in the public repository and the versioned Zenodo archive.
